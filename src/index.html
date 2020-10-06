@@ -9,16 +9,61 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
-
+  #player{
+    width:550px;
+    height: 400px;
+    position: relative;
+  }
+  #header{
+    /* width: 350px; */
+    transform: translate(-10px, 100px);
+    z-index: -1;
+  }
+  #player img{
+    position: absolute;
+  }
+  #door1{
+    left:120px;
+    top: 150px;
+    max-width:100px;
+  }
+  #door2{
+    left:225px;
+    top: 150px;
+    max-width:100px;
+  }
+  #door3{
+    left:325px;
+    top: 150px;
+    max-width:100px;
+  }
+  #host{
+    bottom:0px;
+    left:0px;
+    max-width:100px;
+  }
+  #title{
+    top: 50px;
+    left: 125px;
+    width: 300px;
+  }
+  #car{
+    width: 75px;
+  }
+  #goat{
+    width:75px;
+    right:0px;
+  }
+ 
 </style>
 
 <body class='bg-secondary'>
-  <div class="container bg-secondary">
+  <div class="container">
     <div class="row">
-      <h1 class="text-white">Stay or Switch</h1>
+      <img id="header" src="./images/background_header.png">
     </div>
     <div class="row">
-      <div class="col-10 bg-light mb-2">
+      <div class="col-10 mb-2">
         <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
           <ul class="nav nav-fill">
             <li class="nav-item">
@@ -44,41 +89,16 @@
     </div>
     <div class="row">
       <div class="col-10 p-3 bg-light">
-          <p>
+          <div id='player' class='bg-primary'>
+            <img id='title' src='./images/title.png'>
+            <img id='host'  src='./images/host.png'>
+            <img id='door1' src='./images/door1.png'>
+            <img id='door2' src='./images/door2.png'>
+            <img id='door3' src='./images/door3.png'>
+            <img id='car' src='./images/car.png'>
+            <img id='goat' src='./images/goat.png'>
 
-            I'm baby prism distillery wolf occupy edison bulb kickstarter ramps semiotics mustache meggings. Blog forage
-            man bun
-            helvetica YOLO thundercats succulents, taiyaki craft beer truffaut farm-to-table brooklyn meditation. Seitan
-            echo park
-            flannel hexagon, paleo gluten-free cardigan venmo cred. Tacos fanny pack truffaut live-edge skateboard
-            pickled gochujang
-            unicorn. Skateboard bespoke chia sartorial affogato street art mustache microdosing shaman heirloom
-            succulents. Beard
-            VHS hammock palo santo, fam you probably haven't heard of them tote bag food truck subway tile adaptogen.
-          </p>
-          <p>
-            Leggings fashion axe tattooed intelligentsia kinfolk put a bird on it kale chips letterpress tote bag
-            humblebrag mlkshk
-            literally drinking vinegar. Humblebrag meggings live-edge sartorial vexillologist, selvage gastropub. Woke
-            affogato tote
-            bag salvia neutra, normcore iPhone gentrify humblebrag la croix cliche vice. Cold-pressed tacos bicycle
-            rights street
-            art copper mug church-key man bun raclette man braid williamsburg chartreuse microdosing. Banh mi edison
-            bulb lomo,
-            thundercats brooklyn chicharrones hexagon unicorn lyft narwhal. Jean shorts plaid blue bottle seitan pug
-            literally.
-          </p>
-          <p>
-
-            Meh freegan tote bag neutra subway tile. Offal lyft man braid narwhal mlkshk la croix hella drinking vinegar
-            ramps
-            intelligentsia af sriracha occupy mustache hell of. Hoodie fixie banh mi semiotics blog slow-carb paleo
-            schlitz shaman
-            mustache tacos poutine master cleanse thundercats tofu. Viral artisan fingerstache direct trade blog hot
-            chicken. Shaman
-            organic kinfolk celiac, seitan tumeric cred meggings disrupt.
-          </p>
-
+          </div>
       </div>
       <div class="col-2 bg-primary text-white p-3">
         My Top 13 Simple Math Puzzles Most People Can't Solve
